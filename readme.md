@@ -20,15 +20,15 @@ The library provides a `RenderModeProvider` service that you can inject into you
 
 var mode = RenderMode.GetRenderMode(this);
 
-@if (mode.IsInteractive && mode.IsServer)
+@if (mode.IsInteractive() && mode.IsServer())
 {
     <p>This is a server interactive Blazor page</p>
 }
-else if (mode.IsInteractive && mode.IsWebAssembly)
+else if (mode.IsWebAssembly())
 {
     <p>This is a WebAssembly interactive Blazor page</p>
 }
-else if (mode.IsServer && mode.IsStreaming)
+else if (mode.IsServer() && mode.IsStreaming())
 {
     <p>This is a streaming server static Blazor page</p>
 }
