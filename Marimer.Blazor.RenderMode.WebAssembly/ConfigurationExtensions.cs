@@ -5,10 +5,9 @@
 // </copyright>
 // <summary>Extension methods for the RenderMode enum</summary>
 //-----------------------------------------------------------------------
-using Microsoft.AspNetCore.Components.Server.Circuits;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Marimer.Blazor.RenderMode
+namespace Marimer.Blazor.RenderMode.WebAssembly
 {
     /// <summary>
     /// Extension methods for the RenderMode enum
@@ -24,7 +23,6 @@ namespace Marimer.Blazor.RenderMode
         {
             services.AddTransient<RenderModeProvider>();
             services.AddScoped<ActiveCircuitState>();
-            services.AddScoped(typeof(CircuitHandler), typeof(ActiveCircuitHandler));
             return services;
         }
     }

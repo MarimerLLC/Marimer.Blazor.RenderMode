@@ -1,0 +1,27 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <!-- Common Package Settings -->
+    <PropertyGroup>
+        <Version>1.0.2.0</Version>
+        <RepositoryType>GitHub</RepositoryType>
+        <Company>Marimer LLC</Company>
+        <Product>Blazor Render Mode Detection</Product>
+        <Copyright>Copyright © 2002-$([System.DateTime]::Now.ToString('yyyy')) Marimer LLC</Copyright>
+        <Authors>Marimer LLC</Authors>
+        <Title>Blazor Render Mode Detection</Title>
+        <PackageProjectUrl>https://github.com/MarimerLLC/Marimer.Blazor.RenderMode</PackageProjectUrl>
+        <PackageReadmeFile>../readme.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/MarimerLLC/Marimer.Blazor.RenderMode</RepositoryUrl>
+        <PackageTags>aspnetcore;blazor</PackageTags>
+        <PackageLicenseExpression> MIT</PackageLicenseExpression>
+        <IncludeSymbols>True</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+</Project>

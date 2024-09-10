@@ -7,9 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marimer.Blazor.RenderMode",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A7372E0-B9B2-457A-B50C-687FF9D0BD00}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		global.json = global.json
+		push.ps1 = push.ps1
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marimer.Blazor.RenderMode.WebAssembly", "Marimer.Blazor.RenderMode.WebAssembly\Marimer.Blazor.RenderMode.WebAssembly.csproj", "{2C0CBC7A-F04A-438C-8009-A8205D0D13BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,10 @@ Global
 		{D5B205FB-A8CE-49A2-9AED-1A0300AE81A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5B205FB-A8CE-49A2-9AED-1A0300AE81A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5B205FB-A8CE-49A2-9AED-1A0300AE81A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0CBC7A-F04A-438C-8009-A8205D0D13BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0CBC7A-F04A-438C-8009-A8205D0D13BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0CBC7A-F04A-438C-8009-A8205D0D13BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0CBC7A-F04A-438C-8009-A8205D0D13BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
