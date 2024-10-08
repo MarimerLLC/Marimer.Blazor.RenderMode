@@ -4,11 +4,25 @@ The `Marimer.Blazor.RenderMode` library provides a simple way to detect the curr
 
 ## Installation
 
-You can install the library via NuGet. Run the following command:
+You can install the library via NuGet. Run the following command for a Blazor Server project:
 
 ```
 dotnet add package Marimer.Blazor.RenderMode
 ```
+
+For a Blazor WebAssembly project or Razor Class Library, run the following command:
+
+```
+dotnet add package Marimer.Blazor.RenderMode.WebAssembly
+```
+
+In `Program.cs`, add the following line to register the service:
+
+```csharp
+builder.Services.AddRenderModeDetection();
+```
+
+When using a Razor Class Library that may be loaded in WebAssembly, make sure to add that registration to the client-side `Program.cs` as well.
 
 ## Usage
 
